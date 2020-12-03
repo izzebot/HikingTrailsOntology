@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/izzebot/ontologies/2017/6/HikingTrails"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/izzebot/ontologies/2017/6/HikingTrails"
+     versionIRI="http://www.semanticweb.org/izzebot/ontologies/2017/6/HikingTrails/0.0">
+    <Prefix name="htv" IRI="http://www.semanticweb.org/izzebot/ontologies/2017/6/HikingTrails"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.geonames.org/ontology</Import>
+    <Import>http://www.w3.org/2003/01/geo/wgs84_pos</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is the intial implementation of a Hiking Trail Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Hiking Trail Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#HikingTrail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BikeTrail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterTrail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DifficultyLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HikingTrail:T1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://geovocab.org/spatial#Feature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#color"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Campsites"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PinnacleTrail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SurfaceType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#existsIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#openDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrailFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trail"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#difficulty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Assent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Philadelphia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrailSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#knownAs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Point"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PinnacleTrailSystem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#length"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HikingTrailLength"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTrail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BlazeColor:White"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#crossess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#closedDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Length"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#startsIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RGBT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrailHouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endsIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#allows"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AllowedActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accommodation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Color"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#managedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#blazed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeanTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#surfaceType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.geonames.org/ontology#P.PPL"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Contact"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Contact"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Accommodation"/>
+        <Class IRI="#TrailFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AllowedActivity"/>
+        <Class IRI="#TrailFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BikeTrail"/>
+        <Class IRI="#Trail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campsites"/>
+        <Class IRI="#Accommodation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Color"/>
+        <Class IRI="#TrailFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Color"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#color"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contact"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasA"/>
+            <Class IRI="#TrailSystem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DifficultyLevel"/>
+        <Class IRI="#TrailFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DifficultyLevel"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#difficulty"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HikingTrail"/>
+        <Class IRI="#Trail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HikingTrail"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#blazed"/>
+            <Class IRI="#Color"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeanTo"/>
+        <Class IRI="#Accommodation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Length"/>
+        <Class IRI="#TrailFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Length"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#length"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Point"/>
+        <Class IRI="#TrailFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Point"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Point"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#startsIn"/>
+            <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceType"/>
+        <Class IRI="#TrailFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceType"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#surfaceType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trail"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#belongsTo"/>
+            <Class IRI="#TrailSystem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trail"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#existsIn"/>
+            <Class IRI="http://geovocab.org/spatial#Feature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trail"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasA"/>
+            <Class IRI="#Accommodation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trail"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasA"/>
+            <Class IRI="#TrailFeature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trail"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#startsIn"/>
+            <Class IRI="#Point"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trail"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#endsIn"/>
+            <Class IRI="#Point"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trail"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.geonames.org/ontology#name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrailHouse"/>
+        <Class IRI="#Accommodation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrailSystem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#Trail"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrailSystem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#managedBy"/>
+            <Class IRI="#Contact"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrailSystem"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.geonames.org/ontology#name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterTrail"/>
+        <Class IRI="#Trail"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://geovocab.org/spatial#Feature"/>
+        <Class IRI="#TrailFeature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BikeTrail"/>
+        <Class IRI="#WaterTrail"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HikingTrail"/>
+        <Class IRI="#WaterTrail"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#HikingTrail"/>
+        <NamedIndividual IRI="#AT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Length"/>
+        <NamedIndividual IRI="#HikingTrailLength"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://geovocab.org/spatial#Feature"/>
+        <NamedIndividual IRI="#Philadelphia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HikingTrail"/>
+        <NamedIndividual IRI="#PinnacleTrail"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrailSystem"/>
+        <NamedIndividual IRI="#PinnacleTrailSystem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HikingTrail"/>
+        <NamedIndividual IRI="#RGBT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurfaceType"/>
+        <NamedIndividual IRI="#SurfaceType"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#BlazeColor:White"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.geonames.org/ontology#featureClass"/>
+        <NamedIndividual IRI="http://www.geonames.org/ontology#P.PPL"/>
+        <NamedIndividual IRI="http://www.geonames.org/ontology#P.PPL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.geonames.org/ontology#nearby"/>
+        <NamedIndividual IRI="#PinnacleTrail"/>
+        <NamedIndividual IRI="#Philadelphia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.geonames.org/ontology#nearby"/>
+        <NamedIndividual IRI="#PinnacleTrail"/>
+        <NamedIndividual IRI="#RGBT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsTo"/>
+        <NamedIndividual IRI="#PinnacleTrail"/>
+        <NamedIndividual IRI="#PinnacleTrailSystem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#blazed"/>
+        <NamedIndividual IRI="#PinnacleTrail"/>
+        <NamedIndividual IRI="#BlazeColor:White"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#PinnacleTrailSystem"/>
+        <NamedIndividual IRI="#PinnacleTrail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#crossess"/>
+        <NamedIndividual IRI="#RGBT"/>
+        <NamedIndividual IRI="#AT"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.geonames.org/ontology#name"/>
+        <NamedIndividual IRI="#PinnacleTrail"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pinnacle</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#difficulty"/>
+        <NamedIndividual IRI="#PinnacleTrail"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#length"/>
+        <NamedIndividual IRI="#PinnacleTrail"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#surfaceType"/>
+        <NamedIndividual IRI="#SurfaceType"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#color"/>
+        <NamedIndividual IRI="#BlazeColor:White"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">white</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#closedDate"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#crossess"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#openDate"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectProperty IRI="#contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#existsIn"/>
+        <ObjectProperty IRI="#hasTrail"/>
+    </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#belongsTo"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.geonames.org/ontology#nearby"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#crossess"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#knownAs"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://www.geonames.org/ontology#nearby"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#blazed"/>
+        <Class IRI="#Color"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#closedDate"/>
+        <Class IRI="#Trail"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Trail"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#TrailSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#crossess"/>
+        <Class IRI="#Trail"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#endsIn"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#existsIn"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasA"/>
+        <Class IRI="#Accommodation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTrail"/>
+        <Class IRI="#Trail"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#knownAs"/>
+        <Class IRI="#Trail"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#knownAs"/>
+        <Class IRI="#TrailSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#managedBy"/>
+        <Class IRI="#TrailSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#openDate"/>
+        <Class IRI="#Trail"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#startsIn"/>
+        <Class IRI="#Trail"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#blazed"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#color"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#closedDate"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#date"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#openDate"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#date"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Assent"/>
+        <Class IRI="#Trail"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#color"/>
+        <Class IRI="#Color"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#length"/>
+        <Class IRI="#Length"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.geonames.org/ontology#name"/>
+        <Datatype abbreviatedIRI="xsd:Name"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Assent"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#color"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#difficulty"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#length"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#surfaceType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Accommodation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class is used specifically to describe the three types of available accomadations for Hiking Trails.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BikeTrail</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class is specifically used to refer to Bike Trails subtypes of Trails</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Color</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This Class is used to describe trail marking colors, specific RGB or HEX references should NOT be used in the object definitions of this class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Contact</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class is used to describe a person OR organization who is responsible for managing a trail system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DifficultyLevel</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class is used to describe the Difficulty of a hiking trail and should have data in a range of 0 - 11.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HikingTrail</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class is used specifically to describe Hiking Trails</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Length</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class is used to link hiking trails to lengths currently in INT format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Point</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class is related to the GEO concept of spactial thing and location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SurfaceType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class is used to link a trail to strings decribing the primary surfaces of the trail, such as asphalt or gravel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Trail</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is the core class for the Trail Ontology, all other classes are built to support this class, though they are not necessarily subclasses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TrailFeature</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is the superclass for types of trail features. This exists to query against to get a simple listing of all trail features</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TrailSystem</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Trail system is a combination of one or more trails.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WaterTrail</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class is specifically reserved for Water trails, Water Trails cannot also be bike or Hiking Trails.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#allows</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is used to describe allowed activities within the Hiking System, it can also be applied to GeoFeatures such as parks or specifc Trails</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#belongsTo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This indicates what Trail System a specific Trail belongs to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#belongsTo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">belongsTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#blazed</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is used to denote the Trail Blaze Colors of individual Trails, it should relate a COLOR to a TRAIL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#closedDate</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property links a Trail to a specific closedDate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#contains</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is used to indicate that a Trail System encapsulates a specific Trail</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#crossess</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is used to indicate that two trails cross each other. It is a symmetric property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#endsIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The property connects a Trail to POINT to provide a location for ending longitude and latitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#existsIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property links a Trail or GeoFeature to another GeoFeature which encapsulates the initial object, ex: Philadelphia exists in PA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasA</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is used to link Accommedations objects to Trail objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTrail</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is used to denote the a GeoFeature has a specific Trail</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#knownAs</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is used to link Trails with multiple names to a single instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#managedBy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property links a Trail System to the Contact who manages the Trail System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#openDate</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property links a referenced Trail to a specific opening date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#startsIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The property connects a Trail to POINT to provide a location for starting longitude and latitude</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
